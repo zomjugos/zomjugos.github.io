@@ -17,5 +17,12 @@ footer{
     color: white;
 }
 body{
-    font-family: "Comic Sans";
+    font-family: "Comic Sans", cursive;
+}
+header{
+    background-color: black;
+    padding: 5px;
+}
+nav{
+    color: white;
 }
