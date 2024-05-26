@@ -8,12 +8,11 @@ ul{
 #oneShot{
     background-color: #050505;
     border-radius: 10px;
+    padding: 10px;
 
 }
 footer{
-    background-color: #555;
-    margin: 20px;
+    background-color: #141414;
     padding: 9px;
-    border-radius: 10px;
     color: white;
 }
