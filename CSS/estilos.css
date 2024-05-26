@@ -26,3 +26,10 @@ header{
 nav{
     color: white;
 }
+figure{
+    position: relative;
+}
+img {
+    height: 500px;
+    width: 550px;
+  }
