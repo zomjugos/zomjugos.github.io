@@ -1,5 +1,5 @@
 ul{
-    background-color: #555;
+    background-color: #8706d7;
     margin: 20px;
     border-radius: 10px;
     color: white;
@@ -21,7 +21,7 @@ body{
 }
 header{
     background-color: black;
-    padding: 5px;
+    padding: 10px;
 }
 nav{
     color: white;
