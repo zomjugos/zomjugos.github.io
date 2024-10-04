@@ -33,3 +33,6 @@ img {
     height: 500px;
     width: 550px;
   }
+ol:hover{
+    border: 1px solid purple;
+}
