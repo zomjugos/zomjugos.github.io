@@ -33,6 +33,6 @@ img {
     height: 500px;
     width: 550px;
   }
-ol:hover{
+#oneShot:hover{
     border: 5px solid purple;
 }
