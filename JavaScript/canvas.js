@@ -7,7 +7,7 @@ const typed = new Typed('.typed', {
         '<i class="mascota">el mono (me olvide su nombre)</i>',
         '<i class="mascota">Mauri</i>',
         '<i class="mascota">Fede</i>',
-        '<i class="mascota">Nuñes</i>',
+        '<i class="mascota">Nuñez</i>',
         '<i class="mascota">vida</i>'
     ],
     typedSpeed: 75,
