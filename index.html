@@ -4,11 +4,12 @@
     <!-- Asi se escribe un mensaje-->
     <meta charset="utf-8">
     <link rel="stylesheet" href="CSS/estilos.css">
+    <!--<link rel="preload" href="JavaScript/canvas.js">-->
     <title>La sociedad wiki</title>
   </head>
-  <body>
+  <body onload="dibujo()">
     <!-- Texto de prueba-->
-    <header><nav>La sociedad Fandom wiki</nav></header>
+    <header><canvas id="canvas" width="1460" height="50" style="border: 0.0625rem solid black">Su computadora no permite usar canvas</canvas></header>
 
     <hr>
 
@@ -79,7 +80,6 @@
 
       </ul>
 
-      <!--
       <ul>
         <li>LA MEJOR HISTORIA DE TODOS LOS TIEMPOS Y UNIVERSOS: Dylan y el pan. (Y si, esto es mejor que Shingeki no Kioyin Santi)</li>
         <ol>
@@ -87,20 +87,47 @@
         </ol>
 
       </ul>
-      -->
     </ul>
-      
 
     <figure>
       <img src="IMG/Scp_426_hello_i_am_an_eldritch_horror.webp">
     </figure>
     <figcaption>Texto de prueba</figcaption>
-    
 
-    <audio autoplay controls preload="auto" loop>
+    <script type="text/JavaScript">
+       function dibujo(){
+        var acepta = retornarRecuadro("canvas");
+        if(acepta){
+            var x = 10;
+            acepta.font = "bold 1.5625rem Sans-serif";
+            acepta.textAlign = "left";
+            acepta.fillText("La sociedad Fandom Wiki", x, 30);
+           /* while (x != 0) {
+              setTimeout(() => {
+                acepta.clearRect(0,0, 1460,50);
+              }, 1000);
+              
+              
+              x=x=5;
+              acepta.fillText("La sociedad Fandom Wiki", x, 30);
+            }*/
+        }
+ }
+ function retornarRecuadro(x){
+    var canvas = document.getElementById(x);
+    if(canvas.getContext){
+        var acepta = canvas.getContext("2d");
+        return acepta;
+    }else{
+        return false;
+    }
+ }
+    </script>
+
+    <!-- <audio autoplay controls preload="auto" loop>
       <source src="AUD/A Certain Romance.mp3" type="audio/mp3">
       <source src="AUD/A Certain Romance.ogg" type="audio/ogg">
-    </audio>
+    </audio> -->
 
 
     
@@ -108,7 +135,5 @@
       <a href="https://www.youtube.com/channel/UCpq5oH4B6ttOALxeXCHY-kg">Visiten mi canal de youtube en el que no subo absolutamente nada</a><br>
       Esta pagina no es oficial ni aprobada por el creador de la sociedad ni queremos ganar dinero de esta misma pagina, asi que no me demandes nigga
     </footer>
-    
-
   </body>
 </html>
