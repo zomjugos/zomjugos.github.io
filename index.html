@@ -94,35 +94,7 @@
     </figure>
     <figcaption>Texto de prueba</figcaption>
 
-    <script type="text/JavaScript">
-       function dibujo(){
-        var acepta = retornarRecuadro("canvas");
-        if(acepta){
-            var x = 10;
-            acepta.font = "bold 1.5625rem Sans-serif";
-            acepta.textAlign = "left";
-            acepta.fillText("La sociedad Fandom Wiki", x, 30);
-           /* while (x != 0) {
-              setTimeout(() => {
-                acepta.clearRect(0,0, 1460,50);
-              }, 1000);
-              
-              
-              x=x=5;
-              acepta.fillText("La sociedad Fandom Wiki", x, 30);
-            }*/
-        }
- }
- function retornarRecuadro(x){
-    var canvas = document.getElementById(x);
-    if(canvas.getContext){
-        var acepta = canvas.getContext("2d");
-        return acepta;
-    }else{
-        return false;
-    }
- }
-    </script>
+    <script src="JavaScript/canvas.js"></script>
 
     <!-- <audio autoplay controls preload="auto" loop>
       <source src="AUD/A Certain Romance.mp3" type="audio/mp3">
