@@ -6,6 +6,9 @@ ul{
     list-style: none;
     padding: 0.625rem;
 }
+ul ul{
+    border: 0.1875rem solid honeydew;
+}
 ul ul:hover{
     border: 0.1875rem solid #b00ec9;
 }
