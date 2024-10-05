@@ -1,12 +1,13 @@
 const typed = new Typed('.typed', {
-    strings: ['Dylan',
-        'Santi',
-        'Elias',
-        'Luca (mejor conocido solo como Quiroz)',
-        'el mono (me olvide su nombre)',
-        'Mauri',
-        'Fede',
-        'vida'
+    strings: [
+        '<i class="mascota">Dylan</i>',
+        '<i class="mascota">Santi</i>',
+        '<i class="mascota">Elias</i>',
+        '<i class="mascota">Luca (mejor conocido solo como Quiroz)</i>',
+        '<i class="mascota">el mono (me olvide su nombre)</i>',
+        '<i class="mascota">Mauri</i>',
+        '<i class="mascota">Fede</i>',
+        '<i class="mascota">vida</i>'
     ],
     typedSpeed: 75,
     startDelay: 300,

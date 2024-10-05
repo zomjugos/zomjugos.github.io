@@ -30,3 +30,8 @@ img {
     height: 31.25rem;
     width: 34.375rem;
 }
+.contenedorSociedad .mascota{
+    font-weight: bold;
+    color: #b00ec9;
+    font-style: normal;
+}
