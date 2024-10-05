@@ -1,38 +1,32 @@
 ul{
-    background-color: #6a6e73;
-    margin: 20px;
-    border-radius: 10px;
+    background-color: #322936;
+    margin: 1.25rem;
+    border-radius: 0.625rem;
     color: white;
     list-style: none;
+    padding: 0.625rem;
+}
+ul:hover{
+    border: 0.1875rem solid #b00ec9;
 }
 #oneShot{
     background-color: #050505;
-    border-radius: 10px;
-    padding: 10px;
+    border-radius: 0.625rem;
+    padding: 0.625rem;
 
 }
 footer{
     background-color: #141414;
-    padding: 9px;
+    padding: 0.5625rem;
     color: white;
 }
 body{
-    font-family: "Comic Sans", cursive;
-}
-header{
-    background-color: black;
-    padding: 10px;
-}
-nav{
-    color: white;
+    font-family: "Comic Sans", sans-serif;
 }
 figure{
     position: relative;
 }
 img {
-    height: 500px;
-    width: 550px;
-  }
-ol:hover{
-    border: 5px solid purple;
+    height: 31.25rem;
+    width: 34.375rem;
 }
