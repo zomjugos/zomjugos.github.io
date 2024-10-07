@@ -1,6 +1,6 @@
 ul{
     background-color: #050505;
-    margin: 1.25rem;
+    margin: 0.625rem;
     border-radius: 0.625rem;
     color: white;
     list-style: none;
@@ -8,6 +8,7 @@ ul{
 }
 ul ul{
     border: 0.1875rem solid honeydew;
+    transition: border 0.35s linear;
 }
 ul ul:hover{
     border: 0.1875rem solid #b00ec9;
