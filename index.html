@@ -21,7 +21,47 @@
     <h2>La pagina oficial de la sociedad. (En construccion, morite santi) <br></h2>
     <ul>
       <li><h3>La primera historia, en la que los protagonistas son una pareja poliamorosa y homosexual. Aunque con el paso de los capitulos obtengan superpoderes, (Excepto el mono Perez)</h3></li>
-
+      <li><canvas id="letrero" width="500" height="150"></canvas>
+        <script>
+          const canvas = document.getElementById('letrero');
+          const ctx = canvas.getContext('2d');
+  
+          let text = "Personajes:   Dylan   Santi   Gabriel   Luca   Elias P   Elias G   Mauri   Ivan   Kori (aparece en el ultimo capitulo xd)"; // El texto a mostrar
+          let posX = canvas.width; // Posición inicial del texto (fuera del canvas a la derecha)
+          const speed = 2; // Velocidad de movimiento
+          const fontSize = 40; // Tamaño de la fuente
+  
+          function drawText() {
+              // Limpiar el canvas
+              ctx.clearRect(0, 0, canvas.width, canvas.height);
+  
+              // Establecer el estilo del texto
+              ctx.font = fontSize + "px Arial";
+              ctx.fillStyle = "#00ff00";
+              ctx.textAlign = "left";
+              ctx.textBaseline = "middle"; // Alineación vertical centrada
+  
+              // Dibujar el texto
+              ctx.fillText(text, posX, canvas.height / 2);
+  
+              // Actualizar la posición del texto
+              posX -= speed;
+  
+              // Reiniciar la posición del texto cuando sale por la izquierda
+              const textWidth = ctx.measureText(text).width;
+              if (posX < -textWidth) {
+                  posX = canvas.width;
+              }
+  
+              // Repetir el dibujo del texto
+              requestAnimationFrame(drawText);
+          }
+  
+          // Iniciar la animación
+          drawText();
+      </script>
+  
+      </li>
       <ol>
         <li><a href="historias/poliamor/poliamor1.html">La historia original: La historia poliamorosa (capitulo uno)</a></li>
         <li><a href="historias/poliamor/poliamor2.html">La historia original: La historia poliamorosa (capitulo dos)</a></li>
