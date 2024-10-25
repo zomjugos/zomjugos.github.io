@@ -26,6 +26,7 @@ footer{
 }
 body{
     font-family: "Comic Sans", sans-serif;
+    background-color: #a3a8b7;
 }
 figure{
     position: relative;
@@ -38,7 +39,4 @@ img {
     font-weight: bold;
     color: #b00ec9;
     font-style: normal;
-}
-body{
-    background-color: #a3a8b7;
 }
