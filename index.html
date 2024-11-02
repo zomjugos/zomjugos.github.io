@@ -18,7 +18,7 @@
 
     <hr>
 
-    <h2>La pagina oficial de la sociedad. (En construccion, morite santi) <br></h2>
+    <h2>La pagina oficial de la sociedad. (En construccion, subi mas historias Dylan) <br></h2>
     <ul>
       <ul class="oneShot">
           <li><h3>La primera historia, en la que los protagonistas son una pareja poliamorosa y homosexual. Aunque con el paso de los capitulos obtengan superpoderes, (Excepto el mono Perez)</h3></li>
@@ -33,29 +33,29 @@
               const fontSize = 40; // Tamaño de la fuente
       
               function drawText() {
-                  // Limpiar el canvas
-                  ctx.clearRect(0, 0, canvas.width, canvas.height);
+                // Limpiar el canvas
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
       
-                  // Establecer el estilo del texto
-                  ctx.font = fontSize + "px Arial";
-                  ctx.fillStyle = "#621176";
-                  ctx.textAlign = "left";
-                  ctx.textBaseline = "middle"; // Alineación vertical centrada
+                // Establecer el estilo del texto
+                ctx.font = fontSize + "px Arial";
+                ctx.fillStyle = "#621176";
+                ctx.textAlign = "left";
+                ctx.textBaseline = "middle"; // Alineación vertical centrada
       
-                  // Dibujar el texto
-                  ctx.fillText(text, posX, canvas.height / 2);
+                // Dibujar el texto
+                ctx.fillText(text, posX, canvas.height / 2);
       
-                  // Actualizar la posición del texto
-                  posX -= speed;
+                // Actualizar la posición del texto
+                posX -= speed;
       
-                  // Reiniciar la posición del texto cuando sale por la izquierda
-                  const textWidth = ctx.measureText(text).width;
-                  if (posX < -textWidth) {
-                      posX = canvas.width;
-                  }
+                // Reiniciar la posición del texto cuando sale por la izquierda
+                const textWidth = ctx.measureText(text).width;
+                if (posX < -textWidth) {
+                  posX = canvas.width;
+                }
       
-                  // Repetir el dibujo del texto
-                  requestAnimationFrame(drawText);
+                // Repetir el dibujo del texto
+                requestAnimationFrame(drawText);
               }
       
               // Iniciar la animación
@@ -160,7 +160,8 @@
     <figcaption>Texto de prueba</figcaption>
     <br>
     
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/js5i-cmyRm0?si=9NLRvjJzJ2gzijAh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/js5i-cmyRm0?si=9NLRvjJzJ2gzijAh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
 
 
     <audio autoplay preload="auto" control loop>
