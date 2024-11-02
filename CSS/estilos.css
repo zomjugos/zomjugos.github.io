@@ -40,3 +40,6 @@ img {
     color: #b00ec9;
     font-style: normal;
 }
+li{
+    list-style: none;
+}
