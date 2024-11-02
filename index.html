@@ -20,64 +20,66 @@
 
     <h2>La pagina oficial de la sociedad. (En construccion, morite santi) <br></h2>
     <ul>
-      <li><h3>La primera historia, en la que los protagonistas son una pareja poliamorosa y homosexual. Aunque con el paso de los capitulos obtengan superpoderes, (Excepto el mono Perez)</h3></li>
-      <li><canvas id="letrero" width="1300" height="70"></canvas>
-        <script>
-          const canvas = document.getElementById('letrero');
-          const ctx = canvas.getContext('2d');
-  
-          let text = "Personajes:   Dylan   Santi   Gabriel   Luca   Elias P   Elias G   Mauri   Fede  x  Núñez   Ivan   Kori (aparece en el ultimo capitulo xd)"; // El texto a mostrar
-          let posX = canvas.width; // Posición inicial del texto (fuera del canvas a la derecha)
-          const speed = 2; // Velocidad de movimiento
-          const fontSize = 40; // Tamaño de la fuente
-  
-          function drawText() {
-              // Limpiar el canvas
-              ctx.clearRect(0, 0, canvas.width, canvas.height);
-  
-              // Establecer el estilo del texto
-              ctx.font = fontSize + "px Arial";
-              ctx.fillStyle = "#621176";
-              ctx.textAlign = "left";
-              ctx.textBaseline = "middle"; // Alineación vertical centrada
-  
-              // Dibujar el texto
-              ctx.fillText(text, posX, canvas.height / 2);
-  
-              // Actualizar la posición del texto
-              posX -= speed;
-  
-              // Reiniciar la posición del texto cuando sale por la izquierda
-              const textWidth = ctx.measureText(text).width;
-              if (posX < -textWidth) {
-                  posX = canvas.width;
+      <ul class="oneShot">
+          <li><h3>La primera historia, en la que los protagonistas son una pareja poliamorosa y homosexual. Aunque con el paso de los capitulos obtengan superpoderes, (Excepto el mono Perez)</h3></li>
+          <li><canvas id="letrero" width="1300" height="70"></canvas>
+            <script>
+              const canvas = document.getElementById('letrero');
+              const ctx = canvas.getContext('2d');
+      
+              let text = "Personajes:   Dylan   Santi   Gabriel   Luca   Elias P   Elias G   Mauri   Fede  x  Núñez   Ivan   Kori (aparece en el ultimo capitulo xd)"; // El texto a mostrar
+              let posX = canvas.width; // Posición inicial del texto (fuera del canvas a la derecha)
+              const speed = 2; // Velocidad de movimiento
+              const fontSize = 40; // Tamaño de la fuente
+      
+              function drawText() {
+                  // Limpiar el canvas
+                  ctx.clearRect(0, 0, canvas.width, canvas.height);
+      
+                  // Establecer el estilo del texto
+                  ctx.font = fontSize + "px Arial";
+                  ctx.fillStyle = "#621176";
+                  ctx.textAlign = "left";
+                  ctx.textBaseline = "middle"; // Alineación vertical centrada
+      
+                  // Dibujar el texto
+                  ctx.fillText(text, posX, canvas.height / 2);
+      
+                  // Actualizar la posición del texto
+                  posX -= speed;
+      
+                  // Reiniciar la posición del texto cuando sale por la izquierda
+                  const textWidth = ctx.measureText(text).width;
+                  if (posX < -textWidth) {
+                      posX = canvas.width;
+                  }
+      
+                  // Repetir el dibujo del texto
+                  requestAnimationFrame(drawText);
               }
-  
-              // Repetir el dibujo del texto
-              requestAnimationFrame(drawText);
-          }
-  
-          // Iniciar la animación
-          drawText();
-      </script>
-  
-      </li>
-      <ol>
-        <li><a href="historias/poliamor/poliamor1.html">La historia original: La historia poliamorosa (capitulo uno)</a></li>
-        <li><a href="historias/poliamor/poliamor2.html">La historia original: La historia poliamorosa (capitulo dos)</a></li>
-        <li><a href="historias/poliamor/poliamor3.html">La historia original: La historia poliamorosa (capitulo tres)</a></li>
-        <li><a href="historias/poliamor/poliamor4.html">La historia original: La historia poliamorosa (capitulos cuatro)</a></li>
-        <li><a href="historias/poliamor/poliamor5.html">La historia original: La historia poliamorosa (capitulo cinco)</a></li>
-        <li><a href="historias/poliamor/poliamor6.html">La historia original: La historia poliamorosa (capitulo seis)</a></li>
-        <li><a href="historias/poliamor/poliamor7.html">La historia original: La historia poliamorosa (capitulo siete)</a></li>
-        <li><a href="historias/poliamor/poliamor8.html">La historia original: La historia poliamorosa (capitulo ocho)</a></li>
-        <li><a href="historias/poliamor/poliamor9.html">La historia original: La historia poliamorosa (capitulo nueve)</a></li>
-        <li><a href="historias/poliamor/poliamor10.html">La historia original: La historia poliamorosa (capitulos dies)</a></li>
-        <li><a href="historias/poliamor/poliamor11.html">La historia original: La historia poliamorosa (capitulo once)</a></li>
-        <li><a href="historias/poliamor/poliamor12.html">La historia original: La historia poliamorosa (capitulo doce)</a></li>
-        <li><a href="historias/poliamor/poliamor13.html">La historia original: La historia poliamorosa (capitulo trece)</a></li>
-        <li><a href="historias/poliamor/poliamor14.html">La historia original: La historia poliamorosa (capitulo catorce)</a></li>
-      </ol>
+      
+              // Iniciar la animación
+              drawText();
+          </script>
+      
+          </li>
+          <ol>
+            <li><a href="historias/poliamor/poliamor1.html">La historia original: La historia poliamorosa (capitulo uno)</a></li>
+            <li><a href="historias/poliamor/poliamor2.html">La historia original: La historia poliamorosa (capitulo dos)</a></li>
+            <li><a href="historias/poliamor/poliamor3.html">La historia original: La historia poliamorosa (capitulo tres)</a></li>
+            <li><a href="historias/poliamor/poliamor4.html">La historia original: La historia poliamorosa (capitulos cuatro)</a></li>
+            <li><a href="historias/poliamor/poliamor5.html">La historia original: La historia poliamorosa (capitulo cinco)</a></li>
+            <li><a href="historias/poliamor/poliamor6.html">La historia original: La historia poliamorosa (capitulo seis)</a></li>
+            <li><a href="historias/poliamor/poliamor7.html">La historia original: La historia poliamorosa (capitulo siete)</a></li>
+            <li><a href="historias/poliamor/poliamor8.html">La historia original: La historia poliamorosa (capitulo ocho)</a></li>
+            <li><a href="historias/poliamor/poliamor9.html">La historia original: La historia poliamorosa (capitulo nueve)</a></li>
+            <li><a href="historias/poliamor/poliamor10.html">La historia original: La historia poliamorosa (capitulos dies)</a></li>
+            <li><a href="historias/poliamor/poliamor11.html">La historia original: La historia poliamorosa (capitulo once)</a></li>
+            <li><a href="historias/poliamor/poliamor12.html">La historia original: La historia poliamorosa (capitulo doce)</a></li>
+            <li><a href="historias/poliamor/poliamor13.html">La historia original: La historia poliamorosa (capitulo trece)</a></li>
+            <li><a href="historias/poliamor/poliamor14.html">La historia original: La historia poliamorosa (capitulo catorce)</a></li>
+          </ol>
+      </ul>
     </ul>
 
     
@@ -88,7 +90,7 @@
 
       <ul class="oneShot">
         <li>Luca el peleador callejero</li>
-        <ol>
+        <ol >
           <li><a href="historias/lucaYTony/lucaYTony1.html">Luca el boxeador. (Titulo inventado, capitulo uno)</a></li>
           <li><a href="historias/lucaYTony/lucaYTony2.html">Luca el boxeador. (Titulo inventado, capitulo dos)</a></li>
           <li><a href="historias/lucaYTony/lucaYTony3.html">Luca el boxeador. (Titulo inventado, capitulo tres)</a></li>
@@ -98,14 +100,14 @@
 
       <ul class="oneShot">
         <li>Luca y los viajes cuanticos por el tiempo. (Titulo inventado porque Dylan no le puso uno)</li>
-        <ol>
+        <ol >
           <li><a href="historias/viajecuantico/viajecuantico.html">Luca y los viajes cuanticos por el tiempo.</a></li>
         </ol>
       </ul>
 
       <ul class="oneShot">
         <li>El viaje de la amistad: Descubriendo la verdadera grandeza</li>
-        <ol>
+        <ol >
           <li><a href="historias/viajeamistad/viajeamistad.html">El viaje de la amistad: Descubriendo la verdadera grandeza</a></li>
         </ol>
 
