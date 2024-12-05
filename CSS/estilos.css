@@ -26,6 +26,7 @@ footer{
 }
 body{
     font-family: "Comic Sans", sans-serif;
+    color: white;
     background-color: #3e4144;
 }
 figure{
@@ -42,4 +43,17 @@ img {
 }
 li{
     list-style: none;
+}
+a:link{
+    color: azure;
+    background-color: transparent;
+    text-decoration: none;
+}a:visited{
+    color: beige;
+    background-color: transparent;
+    text-decoration: none;
+}a:hover{
+    color: #b00ec9;
+    background-color: transparent;
+    text-decoration: none;
 }
